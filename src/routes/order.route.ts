@@ -8,7 +8,7 @@ router.get('/',orderController.getAllTask);
 
 router.post('/',orderController.create);
 
-router.patch('/:id',orderController.update);
+router.put('/:id',orderController.update);
 
 router.delete('/:id', orderController.delete);
 

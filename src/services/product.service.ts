@@ -9,9 +9,9 @@ export const productService = {
     return await ProductModel.create(entity);
   },
 
-  update: async(id:string, body:object)=>{
-    return await ProductModel.findByIdAndUpdate(id, body);
-  },
+  update: async (id: string, body: object) => {
+    return await ProductModel.findByIdAndUpdate(id, body, { new: true });
+},
 
   delete: async(id:string)=>{
     return await ProductModel.findByIdAndDelete(id);

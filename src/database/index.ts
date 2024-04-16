@@ -1,6 +1,7 @@
 import mongoose,{connect} from 'mongoose';
-import {MONGO_URI} from '../config';
+//import {MONGO_URI} from '../config';
 
+const MONGO_URI="mongodb+srv://admin:admin@cluster0.meiunse.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 export const connectDB = () => {
     mongoose.connect(MONGO_URI as string, {
